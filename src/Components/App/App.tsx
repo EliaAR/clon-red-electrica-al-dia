@@ -1,7 +1,8 @@
+import { Header } from "../Header/Header";
 import "./App.scss";
 
 function App() {
-  return <p>Hello world!</p>;
+  return <Header />;
 }
 
 export { App };

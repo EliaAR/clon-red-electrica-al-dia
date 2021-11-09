@@ -1,0 +1,120 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  &__imgContainer {
+    flex-grow: 0.45;
+    padding: 15px 0 15px 20px;
+    border-right: 1px solid #d9d8d8;
+  }
+  &__img {
+    height: 35px;
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+  }
+  &__searchButton {
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+  &__searchForm {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14vh;
+    width: 100%;
+    background-color: #006699;
+    color: white;
+  }
+  &__searchDiv {
+    flex-grow: 0.75;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__searchInput {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: #006699;
+  }
+  &__searchButton {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: #015580;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &__searchButtonClose {
+    width: 50px;
+    border: none;
+    background-color: #006699;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  &__linkContainer {
+    flex-grow: 0.45;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-left: 1px solid #d9d8d8;
+    font-size: 18px;
+  }
+  &__linkButton {
+    height: 60px;
+    width: 60px;
+    border: none;
+    background-color: white;
+  }
+  &__linkNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space;
+    width: 100%;
+    height: calc(100%-14vh);
+    z-index: 1;
+    position: absolute;
+    top: 70px;
+    left: 0;
+  }
+  &__linkOne {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #006699;
+  }
+  &__linkOneA {
+    color: white;
+    text-transform: uppercase;
+  }
+  &__linkTwo {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  &__linkTwoA {
+    border-bottom: 1px solid #d9d8d8;
+  }
+  &__linkLanguages {
+    order: 2;
+    display: flex;
+    background-color: #006699;
+  }
+  &__linkSpanish,
+  &__linkEnglish {
+    border: none;
+    background-color: #006699;
+    color: white;
+    text-transform: uppercase;
+  }
+}
