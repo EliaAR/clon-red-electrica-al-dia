@@ -34,7 +34,7 @@ function Header() {
         ) : (
           <button
             onClick={() => setMagnifier(!magnifier)}
-            className="header__searchButton  fas fa-search"
+            className="header__searchOpen  fas fa-search"
           ></button>
         )}
       </section>
@@ -89,7 +89,7 @@ function Header() {
         ) : (
           <button
             onClick={() => setBurguer(!burguer)}
-            className="header__anchorButton fas fa-bars"
+            className="header__linkButton fas fa-bars"
           ></button>
         )}
       </section>
