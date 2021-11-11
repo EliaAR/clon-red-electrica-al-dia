@@ -1,9 +1,27 @@
-function APIevolutionDemand({ geo_limit, geo_ids }) {
+interface Params {
+  geo_limit:
+    | "peninsular"
+    | "canarias"
+    | "baleares"
+    | "ceuta"
+    | "melilla"
+    | "ccaa";
+  geo_ids: string;
+  start_date: string;
+  end_date: string;
+}
+
+function APIevolutionDemand({
+  geo_limit,
+  geo_ids,
+  start_date,
+  end_date,
+}: Params) {
   const ENDPOINT = "https://apidatos.ree.es/es/datos/demanda/evolucion/";
 
   const params = new URLSearchParams();
-  params.append("start_date", "2021-11-10T00:00");
-  params.append("end_date", "2021-11-10T23:59");
+  params.append("start_date", start_date);
+  params.append("end_date", end_date);
   params.append("time_trunc", "day");
   params.append("geo_trunc", "electric_system");
   params.append("geo_limit", geo_limit);
@@ -12,7 +30,6 @@ function APIevolutionDemand({ geo_limit, geo_ids }) {
   return fetch(ENDPOINT + "?" + params.toString())
     .then((response) => response.json())
     .then((response) => {
-      debugger;
       return response.included[0].attributes.values[0].value as number;
     });
 }

@@ -9,6 +9,7 @@ import {
 import { APIrealTimeData } from "../../Service/APIrealTimeData";
 import { Header } from "../Header/Header";
 import { Generation } from "../Generation/Generation";
+import { EvolutionDemand } from "../EvolutionDemand/EvolutionDemand";
 import "./App.scss";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
       <Header />
       <main>
         <Generation />
+        <EvolutionDemand />
       </main>
     </>
   );
