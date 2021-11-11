@@ -1,0 +1,63 @@
+.generation {
+  margin: 0 20px;
+  padding: 0 10px;
+  border-top: 4px #87bbd4 solid;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  &__title {
+    padding-top: 2px;
+    border-bottom: 2px dotted rgb(206, 204, 204);
+    text-transform: uppercase;
+    line-height: 2.5;
+    color: #006699;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  &__date {
+    padding: 10px 0;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  &__title2 {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  &__dataContainer {
+    display: flex;
+  }
+  &__percentage {
+    display: flex;
+    align-items: center;
+    min-width: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+  }
+  &__numberContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  &__label,
+  &__number {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  &__dateData {
+    padding: 10px 0;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  &__barContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__data {
+    height: 40px;
+    width: 110px;
+  }
+}
