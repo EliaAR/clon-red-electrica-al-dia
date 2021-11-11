@@ -1,4 +1,4 @@
-function APIinstalledPotencyRenovables() {
+function APIinstalledPotencyRenowable() {
   const ENDPOINT =
     "https://apidatos.ree.es/es/datos/generacion/potencia-evolucion-renovable-no-renovable/";
 
@@ -36,4 +36,4 @@ function APIistalledPotencyNoEmissions() {
     });
 }
 
-export { APIinstalledPotencyRenovables, APIistalledPotencyNoEmissions };
+export { APIinstalledPotencyRenowable, APIistalledPotencyNoEmissions };

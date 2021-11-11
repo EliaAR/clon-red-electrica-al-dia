@@ -3,17 +3,12 @@ import { APIbalancesBorders } from "../../Service/APIbalancesBorders";
 import { APIevolutionDemand } from "../../Service/APIevolutionDemand";
 import { APIevolutionPVPC } from "../../Service/APIevolutionPVPC";
 import {
-  APIinstalledPotencyRenovables,
+  APIinstalledPotencyRenowable,
   APIistalledPotencyNoEmissions,
 } from "../../Service/APIinstalledPotency";
-import {
-  APInationalGenerationEvolutionNoEmissions,
-  APInationalGenerationEvolutionRenewable,
-  APInationalGenerationMaximumNoEmissions,
-  APInationalGenerationMaximumRenewable,
-} from "../../Service/APInationalGeneration";
 import { APIrealTimeData } from "../../Service/APIrealTimeData";
 import { Header } from "../Header/Header";
+import { Generation } from "../Generation/Generation";
 import "./App.scss";
 
 function App() {
@@ -33,10 +28,16 @@ function App() {
     //   console.log(data)
     // );
     // APInationalGenerationMaximumRenewable().then((data) => console.log(data));
-    APInationalGenerationMaximumNoEmissions().then((data) => console.log(data));
   }, []);
 
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <main>
+        <Generation />
+      </main>
+    </>
+  );
 }
 
 export { App };
