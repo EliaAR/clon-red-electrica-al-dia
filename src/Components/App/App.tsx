@@ -1,15 +1,12 @@
 import { useEffect } from "react";
-import { APIbalancesBorders } from "../../Service/APIbalancesBorders";
 import { APIevolutionDemand } from "../../Service/APIevolutionDemand";
 import { APIevolutionPVPC } from "../../Service/APIevolutionPVPC";
-import {
-  APIinstalledPotencyRenowable,
-  APIistalledPotencyNoEmissions,
-} from "../../Service/APIinstalledPotency";
 import { APIrealTimeData } from "../../Service/APIrealTimeData";
 import { Header } from "../Header/Header";
 import { Generation } from "../Generation/Generation";
+import { InstalledPotency } from "../InstalledPotency/InstalledPotency";
 import { EvolutionDemand } from "../EvolutionDemand/EvolutionDemand";
+import { BalancesBorders } from "../BalancesBorders/BalancesBorders";
 import "./App.scss";
 
 function App() {
@@ -34,9 +31,11 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="main">
         <Generation />
+        <InstalledPotency />
         <EvolutionDemand />
+        <BalancesBorders />
       </main>
     </>
   );

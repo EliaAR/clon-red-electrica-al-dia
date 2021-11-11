@@ -1,10 +1,10 @@
-function APIinstalledPotencyRenowable() {
+function APIinstalledPotencyRenowable(startDay, endDay) {
   const ENDPOINT =
     "https://apidatos.ree.es/es/datos/generacion/potencia-evolucion-renovable-no-renovable/";
 
   const params = new URLSearchParams();
-  params.append("start_date", "2021-11-01T00:00");
-  params.append("end_date", "2021-11-10T23:59");
+  params.append("start_date", startDay);
+  params.append("end_date", endDay);
   params.append("time_trunc", "month");
 
   return fetch(ENDPOINT + "?" + params.toString())
@@ -12,18 +12,18 @@ function APIinstalledPotencyRenowable() {
     .then((response) => {
       return {
         value: response.included[0].attributes.values[0].value,
-        percentage: response.included[0].attributes.values[0].percentage,
+        percentage: response.included[0].attributes.values[0].percentage * 100,
       } as { value: number; percentage: number };
     });
 }
 
-function APIistalledPotencyNoEmissions() {
+function APIistalledPotencyNoEmissions(startDay, endDay) {
   const ENDPOINT =
     "https://apidatos.ree.es/es/datos/generacion/potencia-total-evolucion-estructura-emisiones-asociadas/";
 
   const params = new URLSearchParams();
-  params.append("start_date", "2021-11-01T00:00");
-  params.append("end_date", "2021-11-10T23:59");
+  params.append("start_date", startDay);
+  params.append("end_date", endDay);
   params.append("time_trunc", "month");
 
   return fetch(ENDPOINT + "?" + params.toString())
@@ -31,7 +31,7 @@ function APIistalledPotencyNoEmissions() {
     .then((response) => {
       return {
         value: response.included[0].attributes.values[0].value,
-        percentage: response.included[0].attributes.values[0].percentage,
+        percentage: response.included[0].attributes.values[0].percentage * 100,
       } as { value: number; percentage: number };
     });
 }

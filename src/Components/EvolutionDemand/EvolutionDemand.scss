@@ -1,9 +1,10 @@
 .evolutionDemand {
-  margin: 0 20px;
+  margin: 20px 20px;
   padding: 0 10px;
   border-top: 4px #87bbd4 solid;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 5px 5px 5px 0px #919090, 5px 5px 15px 5px rgba(84, 84, 84, 0);
   &__title {
     padding-top: 2px;
     border-bottom: 2px dotted rgb(206, 204, 204);
