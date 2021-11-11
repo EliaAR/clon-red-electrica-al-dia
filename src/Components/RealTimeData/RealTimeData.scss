@@ -1,4 +1,4 @@
-.balances {
+.realTimeData {
   margin: 20px 20px;
   padding: 0 10px;
   border-top: 4px #87bbd4 solid;
@@ -20,31 +20,45 @@
     font-size: 15px;
     font-weight: bold;
   }
-  &__programmed {
+  &__title2 {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  &__dataContainer {
     display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
+  }
+  &__percentage {
+    display: flex;
+    align-items: center;
+    min-width: 70px;
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+  }
+  &__numberContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  &__label,
+  &__number {
+    font-weight: bold;
+    font-size: 13px;
+  }
+  &__dateData {
+    padding: 10px 0;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  &__barContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   &__data {
-    font-weight: bold;
-  }
-  &__bar {
     height: 40px;
     width: 110px;
-  }
-  &__number {
-    font-size: 20px;
-    text-align: center;
-  }
-  &__impExp {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 15px;
-  }
-  &__imp,
-  &__exp {
-    flex-grow: 0.2;
-    display: flex;
-    justify-content: space-between;
   }
 }

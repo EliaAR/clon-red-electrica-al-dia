@@ -29,11 +29,14 @@ function Header() {
               />
               <button className="header__searchButton">Buscar</button>
             </div>
-            <button className="header__searchButtonClose far fa-times-circle"></button>
+            <button
+              onClick={(evt) => setMagnifier(false)}
+              className="header__searchButtonClose far fa-times-circle"
+            ></button>
           </form>
         ) : (
           <button
-            onClick={() => setMagnifier(!magnifier)}
+            onClick={() => setMagnifier(true)}
             className="header__searchOpen  fas fa-search"
           ></button>
         )}
@@ -88,11 +91,19 @@ function Header() {
           </nav>
         ) : (
           <button
-            onClick={() => setBurguer(!burguer)}
+            onClick={() => setBurguer(true)}
             className="header__linkButton fas fa-bars"
           ></button>
         )}
       </section>
+      {burguer ? (
+        <section>
+          <button
+            onClick={() => setBurguer(false)}
+            className="header__linkButton fas fa-times"
+          ></button>
+        </section>
+      ) : null}
     </section>
   );
 }

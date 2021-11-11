@@ -1,10 +1,10 @@
-function APIevolutionPVPC() {
+function APIevolutionPVPC(dayStart, dayEnd) {
   const ENDPOINT =
     "https://apidatos.ree.es/es/datos/mercados/precios-mercados-tiempo-real/";
 
   const params = new URLSearchParams();
-  params.append("start_date", "2021-11-10T00:00");
-  params.append("end_date", "2021-11-10T23:59");
+  params.append("start_date", dayStart);
+  params.append("end_date", dayEnd);
   params.append("time_trunc", "hour");
   params.append("cached", "true");
 

@@ -1,9 +1,9 @@
-function APIrealTimeData() {
+function APIrealTimeData(startDay, endDay) {
   const ENDPOINT =
     "https://apidatos.ree.es/es/datos/demanda/demanda-tiempo-real/";
   const params = new URLSearchParams();
-  params.append("start_date", "2021-11-09T00:00");
-  params.append("end_date", "2021-11-10T00:00");
+  params.append("start_date", startDay);
+  params.append("end_date", endDay);
   params.append("time_trunc", "hour");
 
   return fetch(ENDPOINT + "?" + params.toString())

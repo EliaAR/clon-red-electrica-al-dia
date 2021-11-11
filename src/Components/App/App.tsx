@@ -13,6 +13,7 @@ function App() {
     <>
       <Header />
       <main className="main">
+        <h1 className="main__title">Datos de la Red Eléctrica al día</h1>
         <div className="main__container">
           <Generation />
           <InstalledPotency />

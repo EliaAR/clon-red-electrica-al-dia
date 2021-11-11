@@ -5,4 +5,13 @@
     max-width: 800px;
     margin: auto;
   }
+  &__title {
+    padding: 10px 0;
+
+    background-color: #006699;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+  }
 }
