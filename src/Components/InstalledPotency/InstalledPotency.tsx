@@ -47,56 +47,58 @@ function InstalledPotency() {
     <section className="potency">
       <h3 className="potency__title">Potencia instalada - Nacional</h3>
       <p className="potency__date">{currentDay}</p>
-      <article>
-        <h4 className="potency__title2">Potencia Renovable</h4>
-        <div className="potency__dataContainer">
-          <p className="potency__percentage">
-            {Math.round(installedPotencyRenowablePercentage)}%
-          </p>
-          <div className="potency__numberContainer">
-            <label htmlFor="evolutionRenewable" className="potency__label">
-              Mes en curso:
-              <span className="potency__dateData">{currentDay}</span>
-            </label>
-            <div className="potency__barContainer">
-              <meter
-                id="evolutionRenewable"
-                max={maxPotencyRenewable}
-                value={installedPotencyRenowableValue}
-                className="potency__data"
-              ></meter>
-              <p className="potency__number">
-                {(installedPotencyRenowableValue / 1000).toFixed(1)} GWh
-              </p>
+      <div className="potency__div">
+        <article className="potency__renewable">
+          <h4 className="potency__title2">Potencia Renovable</h4>
+          <div className="potency__dataContainer">
+            <p className="potency__percentage">
+              {Math.round(installedPotencyRenowablePercentage)}%
+            </p>
+            <div className="potency__numberContainer">
+              <label htmlFor="evolutionRenewable" className="potency__label">
+                Mes en curso:
+                <span className="potency__dateData">{currentDay}</span>
+              </label>
+              <div className="potency__barContainer">
+                <meter
+                  id="evolutionRenewable"
+                  max={maxPotencyRenewable}
+                  value={installedPotencyRenowableValue}
+                  className="potency__data"
+                ></meter>
+                <p className="potency__number">
+                  {(installedPotencyRenowableValue / 1000).toFixed(1)} GWh
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </article>
-      <article>
-        <h4 className="potency__title2">Potencia Libre de Emisiones</h4>
-        <div className="potency__dataContainer">
-          <p className="potency__percentage">
-            {Math.round(installedPotencyNoEmissionsPercentage)}%
-          </p>
-          <div>
-            <label htmlFor="evolutionNoEmission" className="potency__label">
-              Mes en curso:
-              <span className="potency__dateData"> {currentDay}</span>
-            </label>
-            <div className="potency__barContainer">
-              <meter
-                id="evolutionNoEmission"
-                max={maxPotencyNoEmission}
-                value={installedPotencyNoEmissionsValue}
-                className="potency__data"
-              ></meter>
-              <p className="potency__number">
-                {(installedPotencyNoEmissionsValue / 1000).toFixed(1)} GWh
-              </p>
+        </article>
+        <article className="potency__noEmission">
+          <h4 className="potency__title2">Potencia Libre de Emisiones</h4>
+          <div className="potency__dataContainer">
+            <p className="potency__percentage">
+              {Math.round(installedPotencyNoEmissionsPercentage)}%
+            </p>
+            <div className="potency__numberContainer">
+              <label htmlFor="evolutionNoEmission" className="potency__label">
+                Mes en curso:
+                <span className="potency__dateData"> {currentDay}</span>
+              </label>
+              <div className="potency__barContainer">
+                <meter
+                  id="evolutionNoEmission"
+                  max={maxPotencyNoEmission}
+                  value={installedPotencyNoEmissionsValue}
+                  className="potency__data"
+                ></meter>
+                <p className="potency__number">
+                  {(installedPotencyNoEmissionsValue / 1000).toFixed(1)} GWh
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </section>
   );
 }

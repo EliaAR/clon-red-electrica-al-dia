@@ -7,7 +7,7 @@ function Header() {
   const [magnifier, setMagnifier] = useState(false);
 
   return (
-    <section className="header">
+    <section className="header" id="RUTAalHEADER">
       <section className="header__imgContainer">
         <img
           src={logo}

@@ -62,3 +62,13 @@
     width: 110px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .generation {
+    &__div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

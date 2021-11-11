@@ -62,3 +62,29 @@
     width: 110px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .potency {
+    &__div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__dataContainer {
+      justify-content: space-between;
+    }
+    &__numberContainer {
+      flex-grow: 0.9;
+    }
+    &__renewable {
+      flex-grow: 0.5;
+    }
+    &__noEmission {
+      flex-grow: 0.5;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-left: 20px;
+    }
+  }
+}

@@ -61,90 +61,95 @@ function Generation() {
     <section className="generation">
       <h3 className="generation__title">Generación - Nacional</h3>
       <p className="generation__date">{currentDay}</p>
-      <article>
-        <h4 className="generation__title2">Generación Renovable</h4>
-        <div className="generation__dataContainer">
-          <p className="generation__percentage">
-            {Math.round(generationPercentageRenewable)}%
-          </p>
-          <div className="generation__numberContainer">
-            <label htmlFor="evolutionRenewable" className="generation__label">
-              Día en curso:{" "}
-              <span className="generation__dateData">{currentDay}</span>
-            </label>
-            <div className="generation__barContainer">
-              <meter
-                id="evolutionRenewable"
-                max={maxGenerationRenewable}
-                value={generationValueRenewable}
-                className="generation__data"
-              ></meter>
-              <p className="generation__number">
-                {(generationValueRenewable / 1000).toFixed(1)} GWh
-              </p>
-            </div>
-            <label htmlFor="maximumRenewable" className="generation__label">
-              Máximo histórico:{" "}
-              <span className="generation__dateData">
-                {maximumDayRenewable}
-              </span>
-            </label>
-            <div className="generation__barContainer">
-              <meter
-                id="maximumRenewable"
-                max={maxMaximumRenewable}
-                value={maximumValueRenewable}
-                className="generation__data"
-              ></meter>
-              <p className="generation__number">
-                {(maximumValueRenewable / 1000).toFixed(1)} GWh
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-      <article>
-        <h4 className="generation__title2">Generación Libre de Emisiones</h4>
-        <div className="generation__dataContainer">
-          <p className="generation__percentage">
-            {Math.round(generationPercentageNoEmission)}%
-          </p>
-          <div>
-            <label htmlFor="evolutionNoEmission" className="generation__label">
-              Día en curso:{" "}
-              <span className="generation__dateData"> {currentDay}</span>
-            </label>
-            <div className="generation__barContainer">
-              <meter
-                id="evolutionNoEmission"
-                max={maxGenerationNoEmission}
-                value={generationValueNoEmission}
-                className="generation__data"
-              ></meter>
-              <p className="generation__number">
-                {(generationValueNoEmission / 1000).toFixed(1)} GWh
-              </p>
-            </div>
-            <label htmlFor="maximumNoEmission" className="generation__label">
-              Máximo histórico:{" "}
-              <span className="generation__dateData">
-                {maximumDayNoEmission}
-              </span>
-            </label>
-            <div className="generation__barContainer">
-              <meter
-                id="maximumNoEmission"
-                max={maxMaximumNoEmission}
-                value={maximumValueNoEmission}
-                className="generation__data"
-              ></meter>
-              <p className="generation__number">
-                {(maximumValueNoEmission / 1000).toFixed(1)} GWh
-              </p>
+      <div className="generation__div">
+        <article>
+          <h4 className="generation__title2">Generación Renovable</h4>
+          <div className="generation__dataContainer">
+            <p className="generation__percentage">
+              {Math.round(generationPercentageRenewable)}%
+            </p>
+            <div className="generation__numberContainer">
+              <label htmlFor="evolutionRenewable" className="generation__label">
+                Día en curso:{" "}
+                <span className="generation__dateData">{currentDay}</span>
+              </label>
+              <div className="generation__barContainer">
+                <meter
+                  id="evolutionRenewable"
+                  max={maxGenerationRenewable}
+                  value={generationValueRenewable}
+                  className="generation__data"
+                ></meter>
+                <p className="generation__number">
+                  {(generationValueRenewable / 1000).toFixed(1)} GWh
+                </p>
+              </div>
+              <label htmlFor="maximumRenewable" className="generation__label">
+                Máximo histórico:{" "}
+                <span className="generation__dateData">
+                  {maximumDayRenewable}
+                </span>
+              </label>
+              <div className="generation__barContainer">
+                <meter
+                  id="maximumRenewable"
+                  max={maxMaximumRenewable}
+                  value={maximumValueRenewable}
+                  className="generation__data"
+                ></meter>
+                <p className="generation__number">
+                  {(maximumValueRenewable / 1000).toFixed(1)} GWh
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </article>
+        </article>
+        <article>
+          <h4 className="generation__title2">Generación Libre de Emisiones</h4>
+          <div className="generation__dataContainer">
+            <p className="generation__percentage">
+              {Math.round(generationPercentageNoEmission)}%
+            </p>
+            <div>
+              <label
+                htmlFor="evolutionNoEmission"
+                className="generation__label"
+              >
+                Día en curso:{" "}
+                <span className="generation__dateData"> {currentDay}</span>
+              </label>
+              <div className="generation__barContainer">
+                <meter
+                  id="evolutionNoEmission"
+                  max={maxGenerationNoEmission}
+                  value={generationValueNoEmission}
+                  className="generation__data"
+                ></meter>
+                <p className="generation__number">
+                  {(generationValueNoEmission / 1000).toFixed(1)} GWh
+                </p>
+              </div>
+              <label htmlFor="maximumNoEmission" className="generation__label">
+                Máximo histórico:{" "}
+                <span className="generation__dateData">
+                  {maximumDayNoEmission}
+                </span>
+              </label>
+              <div className="generation__barContainer">
+                <meter
+                  id="maximumNoEmission"
+                  max={maxMaximumNoEmission}
+                  value={maximumValueNoEmission}
+                  className="generation__data"
+                ></meter>
+                <p className="generation__number">
+                  {(maximumValueNoEmission / 1000).toFixed(1)} GWh
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
   );
 }

@@ -1,0 +1,46 @@
+.balances {
+  margin: 20px 20px;
+  padding: 0 10px;
+  border-top: 4px #87bbd4 solid;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 5px 5px 5px 0px #919090, 5px 5px 15px 5px rgba(84, 84, 84, 0);
+  &__title {
+    padding-top: 2px;
+    border-bottom: 2px dotted rgb(206, 204, 204);
+    text-transform: uppercase;
+    line-height: 2.5;
+    color: #006699;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  &__date {
+    padding: 10px 0;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  &__programmed {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  &__data {
+    font-weight: bold;
+  }
+  &__number {
+    font-size: 20px;
+    text-align: center;
+  }
+  &__impExp {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+  &__imp,
+  &__exp {
+    flex-grow: 0.2;
+    display: flex;
+    justify-content: space-between;
+  }
+}
