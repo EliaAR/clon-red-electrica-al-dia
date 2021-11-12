@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/technical-test-Enerclic/static/css/main.835e5673.chunk.css",
+    "main.js": "/technical-test-Enerclic/static/js/main.b2374dba.chunk.js",
+    "main.js.map": "/technical-test-Enerclic/static/js/main.b2374dba.chunk.js.map",
+    "runtime-main.js": "/technical-test-Enerclic/static/js/runtime-main.5bc99bcd.js",
+    "runtime-main.js.map": "/technical-test-Enerclic/static/js/runtime-main.5bc99bcd.js.map",
+    "static/js/2.b0b4940e.chunk.js": "/technical-test-Enerclic/static/js/2.b0b4940e.chunk.js",
+    "static/js/2.b0b4940e.chunk.js.map": "/technical-test-Enerclic/static/js/2.b0b4940e.chunk.js.map",
+    "static/js/3.2c6b2ab9.chunk.js": "/technical-test-Enerclic/static/js/3.2c6b2ab9.chunk.js",
+    "static/js/3.2c6b2ab9.chunk.js.map": "/technical-test-Enerclic/static/js/3.2c6b2ab9.chunk.js.map",
+    "index.html": "/technical-test-Enerclic/index.html",
+    "static/css/main.835e5673.chunk.css.map": "/technical-test-Enerclic/static/css/main.835e5673.chunk.css.map",
+    "static/js/2.b0b4940e.chunk.js.LICENSE.txt": "/technical-test-Enerclic/static/js/2.b0b4940e.chunk.js.LICENSE.txt",
+    "static/media/logo.d30e668e.png": "/technical-test-Enerclic/static/media/logo.d30e668e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5bc99bcd.js",
+    "static/js/2.b0b4940e.chunk.js",
+    "static/css/main.835e5673.chunk.css",
+    "static/js/main.b2374dba.chunk.js"
+  ]
+}
