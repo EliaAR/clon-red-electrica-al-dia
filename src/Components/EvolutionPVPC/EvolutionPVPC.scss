@@ -1,4 +1,4 @@
-.realTimeData {
+.evolutionPVPC {
   margin: 20px 20px;
   padding: 0 10px;
   border-top: 4px #87bbd4 solid;
@@ -60,5 +60,11 @@
   &__data {
     height: 40px;
     width: 110px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .evolutionPVPC {
+    grid-area: f;
   }
 }

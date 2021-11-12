@@ -1,6 +1,14 @@
 .header {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #d9d8d8;
+  z-index: 1;
+  box-shadow: 5px 5px 5px 0px #919090, 5px 5px 15px 5px rgba(84, 84, 84, 0);
   &__imgContainer {
     flex-grow: 0.45;
     padding: 15px 0 15px 20px;

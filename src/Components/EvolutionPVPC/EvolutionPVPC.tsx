@@ -19,11 +19,11 @@ function EvolutionPVPC() {
   }, []);
 
   return (
-    <section className="realTimeData">
-      <h3 className="realTimeData__title">
+    <section className="evolutionPVPC">
+      <h3 className="evolutionPVPC__title">
         Evolucion del PVPC frente al precio del mercado diario
       </h3>
-      <p className="realTimeData__date">{currentDay}</p>
+      <p className="evolutionPVPC__date">{currentDay}</p>
       {data ? (
         <Chart
           series={[

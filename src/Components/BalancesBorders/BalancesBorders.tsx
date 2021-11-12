@@ -44,7 +44,7 @@ function BalancesBorders() {
             <p className="balances__number">
               {Math.round(valueExport / 1000)} GWh{" "}
             </p>
-            <p>Exportación</p>
+            <p className="balances__paragraph">Exportación</p>
           </article>
           <meter
             max={Math.abs(maxExport)}
@@ -57,7 +57,7 @@ function BalancesBorders() {
             <p className="balances__number">
               {Math.round(valueImport / 1000)} GWh{" "}
             </p>
-            <p>Importación</p>
+            <p className="balances__paragraph">Importación</p>
           </article>
           <meter
             max={maxImport}

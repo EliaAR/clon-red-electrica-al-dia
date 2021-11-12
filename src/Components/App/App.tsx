@@ -17,9 +17,9 @@ function App() {
         <div className="main__container">
           <Generation />
           <InstalledPotency />
+          <RealTimeData />
           <EvolutionDemand />
           <BalancesBorders />
-          <RealTimeData />
           <EvolutionPVPC />
         </div>
       </main>

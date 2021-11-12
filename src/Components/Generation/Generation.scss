@@ -65,6 +65,7 @@
 
 @media screen and (min-width: 768px) {
   .generation {
+    grid-area: a;
     &__div {
       display: flex;
       flex-direction: row;

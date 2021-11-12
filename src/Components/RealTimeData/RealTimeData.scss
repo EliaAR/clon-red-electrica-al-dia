@@ -62,3 +62,9 @@
     width: 110px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .realTimeData {
+    grid-area: c;
+  }
+}

@@ -1,17 +1,30 @@
 .main {
   background-color: rgba(223, 221, 221, 0.479);
-  padding: 20px 0;
+  padding-bottom: 20px;
+  margin-top: 69px;
   &__container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
   }
   &__title {
     padding: 10px 0;
-
     background-color: #006699;
     text-align: center;
     color: white;
     font-size: 22px;
     text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    &__container {
+      display: grid;
+      grid-template:
+        "a a a a"
+        "b b b b"
+        "c c c d"
+        "e e f f" / 1fr 1fr 1fr 1fr;
+    }
   }
 }
